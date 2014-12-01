@@ -22,3 +22,13 @@ Example:
 
 subsurface2srt ./test.subsurface "3:20 min" > ~/tmp/st/c.srt 
 
+
+Build:
+
+Prereqs: Haskell - eg apt-get install haskell-platform
+
+Build subsurface2srt by:
+  cabal install
+
+Add ~/.cabal/bin/ to your PATH
+
