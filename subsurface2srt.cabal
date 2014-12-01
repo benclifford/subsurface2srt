@@ -1,0 +1,12 @@
+Name: subsurface2srt
+Version: 0.1
+Description: convert subsurface dive to SRT subtitles
+License: AllRightsReserved
+Author: Ben Clifford <benc@hawaga.org.uk>
+Build-Type: Simple
+Cabal-Version: >=1.6
+
+Executable subsurface2srt
+  Build-depends: base, hxt, parsec
+  main-is: subsurface2srt.hs
+

@@ -1,0 +1,24 @@
+subsurface2srt makes subtitles for a scuba video
+containing dive computer information
+
+subsurface2srt converts a dive xml file containing
+one dive output from subsurface into an SRT subtitles
+file that can then be played alongside a video; for
+example in vlc, choose video... subtitles... open
+
+You need to make sure the output file contains only
+one dive - I do this by editing the xml by hand.
+
+Tested against (the admittedly old) subsurface
+v1.2
+
+The first commandline parameter specifies the
+input xml file; the second file specifies how
+far into the video the dive computer starts logging
+(usually just after the beginning of initial
+descent).
+
+Example:
+
+subsurface2srt ./test.subsurface "3:20 min" > ~/tmp/st/c.srt 
+
